@@ -16,3 +16,11 @@ test("Test /arya route", () => {
 			expect(response.text).toBe("hello arya");
 		});
 });
+
+test("Test /youtube route", () => {
+	return request(app)
+		.get("/youtube")
+		.then(response => {
+			expect(response.text).toBe("hello youtube");
+		});
+});
